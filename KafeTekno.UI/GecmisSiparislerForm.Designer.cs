@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.dgvSiparisler = new System.Windows.Forms.DataGridView();
-            this.dgvSiparisDetaylar = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgvSiparisler = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.dgvSiparisDetaylar = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -57,31 +57,9 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.label2);
             this.splitContainer1.Panel2.Controls.Add(this.dgvSiparisDetaylar);
-            this.splitContainer1.Size = new System.Drawing.Size(812, 456);
+            this.splitContainer1.Size = new System.Drawing.Size(850, 456);
             this.splitContainer1.SplitterDistance = 222;
             this.splitContainer1.TabIndex = 0;
-            // 
-            // dgvSiparisler
-            // 
-            this.dgvSiparisler.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvSiparisler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSiparisler.Location = new System.Drawing.Point(16, 36);
-            this.dgvSiparisler.Name = "dgvSiparisler";
-            this.dgvSiparisler.Size = new System.Drawing.Size(784, 183);
-            this.dgvSiparisler.TabIndex = 0;
-            // 
-            // dgvSiparisDetaylar
-            // 
-            this.dgvSiparisDetaylar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvSiparisDetaylar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSiparisDetaylar.Location = new System.Drawing.Point(16, 38);
-            this.dgvSiparisDetaylar.Name = "dgvSiparisDetaylar";
-            this.dgvSiparisDetaylar.Size = new System.Drawing.Size(784, 180);
-            this.dgvSiparisDetaylar.TabIndex = 1;
             // 
             // label1
             // 
@@ -92,6 +70,26 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Siparişler";
             // 
+            // dgvSiparisler
+            // 
+            this.dgvSiparisler.AllowUserToAddRows = false;
+            this.dgvSiparisler.AllowUserToDeleteRows = false;
+            this.dgvSiparisler.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvSiparisler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvSiparisler.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvSiparisler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSiparisler.Location = new System.Drawing.Point(16, 36);
+            this.dgvSiparisler.MultiSelect = false;
+            this.dgvSiparisler.Name = "dgvSiparisler";
+            this.dgvSiparisler.ReadOnly = true;
+            this.dgvSiparisler.RowHeadersVisible = false;
+            this.dgvSiparisler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvSiparisler.Size = new System.Drawing.Size(822, 183);
+            this.dgvSiparisler.TabIndex = 0;
+            this.dgvSiparisler.SelectionChanged += new System.EventHandler(this.dgvSiparisler_SelectionChanged);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -101,14 +99,33 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Sipariş Detayları";
             // 
+            // dgvSiparisDetaylar
+            // 
+            this.dgvSiparisDetaylar.AllowUserToAddRows = false;
+            this.dgvSiparisDetaylar.AllowUserToDeleteRows = false;
+            this.dgvSiparisDetaylar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvSiparisDetaylar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSiparisDetaylar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvSiparisDetaylar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSiparisDetaylar.Location = new System.Drawing.Point(16, 38);
+            this.dgvSiparisDetaylar.MultiSelect = false;
+            this.dgvSiparisDetaylar.Name = "dgvSiparisDetaylar";
+            this.dgvSiparisDetaylar.ReadOnly = true;
+            this.dgvSiparisDetaylar.RowHeadersVisible = false;
+            this.dgvSiparisDetaylar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvSiparisDetaylar.Size = new System.Drawing.Size(822, 180);
+            this.dgvSiparisDetaylar.TabIndex = 1;
+            // 
             // GecmisSiparislerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 456);
+            this.ClientSize = new System.Drawing.Size(850, 456);
             this.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "GecmisSiparislerForm";
             this.Text = "Geçmiş Siparişler";
             this.splitContainer1.Panel1.ResumeLayout(false);

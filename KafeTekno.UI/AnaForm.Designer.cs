@@ -59,6 +59,7 @@
             this.tsmiGecmisSiparisler.Name = "tsmiGecmisSiparisler";
             this.tsmiGecmisSiparisler.Size = new System.Drawing.Size(168, 29);
             this.tsmiGecmisSiparisler.Text = "Geçmiş Siparişler";
+            this.tsmiGecmisSiparisler.Click += new System.EventHandler(this.tsmiGecmisSiparisler_Click);
             // 
             // lvwMasalar
             // 

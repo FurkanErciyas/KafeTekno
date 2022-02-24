@@ -70,6 +70,11 @@ namespace KafeTekno.UI
             if (siparis.Durum != SiparisDurum.Aktif)
                 lvi.ImageKey = "bos";
         }
+
+        private void tsmiGecmisSiparisler_Click(object sender, EventArgs e)
+        {
+            new GecmisSiparislerForm(db).ShowDialog();
+        }
     }
 }
 
